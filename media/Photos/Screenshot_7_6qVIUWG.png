@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "6b39a029-83a3-478b-81b5-8db9eb28b0d3",
+		"name": "classified",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST/sample/register/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstname",
+							"value": "sachin",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "bg",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "sachin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": ""
+						},
+						{
+							"key": "username",
+							"value": "sachin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "159.89.164.254:9000/sample/register/",
+					"host": [
+						"159",
+						"89",
+						"164",
+						"254"
+					],
+					"port": "9000",
+					"path": [
+						"sample",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/sample/login/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "sachin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "159.89.164.254:9000/sample/login/",
+					"host": [
+						"159",
+						"89",
+						"164",
+						"254"
+					],
+					"port": "9000",
+					"path": [
+						"sample",
+						"login",
+						""
+					]
+				},
+				"description": "login post"
+			},
+			"response": []
+		}
+	]
+}
